@@ -86,7 +86,7 @@ Locations determine on which nodes primitive resources run.
 ```puppet
 cs_location { 'nginx_service_location':
   primitive => 'nginx_service',
-  node_name => 'hostname',
+  node      => 'hostname',
   score     => 'INFINITY'
 }
 ```
