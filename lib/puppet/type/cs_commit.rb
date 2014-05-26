@@ -46,6 +46,10 @@ module Puppet
       resources_with_cib :cs_order
     end
 
+    autorequire(:cs_group) do
+      resources_with_cib :cs_group
+    end
+
     def resources_with_cib(cib)
       autos = []
 
