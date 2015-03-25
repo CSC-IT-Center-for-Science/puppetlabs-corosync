@@ -10,6 +10,6 @@ Puppet::Type.type(:cs_commit).provide(:pcs, :parent => Puppet::Provider::Pacemak
   end
 
   def sync(cib)
-    crm_shadow('--commit', cib)
+    crm_shadow('--batch', '--force', '--commit', cib)
   end
 end
